@@ -1,0 +1,64 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+.promo
+    position: relative
+    width: 450px
+    height: 450px
+    border-radius: 450px
+    border: 2px solid #E8E8E8
+    animation: rotate 60s infinite linear
+    &__wrapper
+        height: 700 px
+    &_two
+        background-image: url(../icons/icon-2.png)
+        width: 90px
+        height: 90px
+        background-size: cover
+        margin-top: 151px
+        margin-left: 170px
+    &_three
+        background-image: url(../icons/icon-3.png)
+        width: 90px
+        height: 90px
+        background-size: cover
+        margin-top: 115px
+        margin-left: 402px
+    &_four
+        background-image: url(../icons/icon-3.png)
+        width: 90px
+        height: 90px
+        background-size: cover
+        margin-top: -317px
+        margin-left: -45px
+    &::before
+        content: ""
+        display: block
+        width: 90px
+        height: 90px
+        background-image: url(../icons/icon-1.png)
+        background-size: cover
+        margin-top: -38px
+        margin-left: 175px
+
+@keyframes rotate
+    100%
+        transform: rotate(360deg)
+
+.elipse
+    position: absolute
+    width: 280px
+    height: 280px
+    border-radius: 280px
+    background: #48B774
+    z-index: 1
+    bottom: 60px
+    left: 732px
+.promo-img
+    position: absolute
+    z-index: 2
+    bottom: -90px
+    left: 470px
+    img
+        width: 800px

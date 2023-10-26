@@ -1,0 +1,48 @@
+.header
+    margin-top: 40px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        display: inline-block
+    &__list
+        display: flex
+        justify-content: space-between
+        width: 500px
+        padding: 0
+        margin: 0
+        list-style: none
+    &__link
+        position: relative
+        text-decoration: none
+        color: #4A4A4A
+        font-family: Poppins
+        font-size: 16px
+        font-weight: 400
+        &::after
+            content: ''
+            display: inline-block
+            width: 0%
+            height: 2px
+            background-color: #FB9B69
+            position: absolute
+            left: 0
+            bottom: -5px
+            opacity: 0
+    &__btn
+        width: 120px
+        height: 40px
+        border-radius: 20px
+        background: #48B774
+        padding: 9px 23px
+        color: #FFF
+        font-family: Poppins
+        font-size: 14px
+        font-weight: 500
+        border: none
+
+.header__link:hover:after
+    opacity: 1
+    transition: 0.5s ease
+    width: 100%
